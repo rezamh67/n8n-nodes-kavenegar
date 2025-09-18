@@ -6,7 +6,7 @@ import type {
 } from 'n8n-workflow';
 import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
 
-export class KavenegarSMS implements INodeType {
+export class KavenegarSms implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Kavenegar SMS',
 		name: 'kavenegarSms',
@@ -92,6 +92,8 @@ export class KavenegarSMS implements INodeType {
 				displayName: 'Token',
 				name: 'token',
 				type: 'string',
+				// eslint-disable-next-line n8n-nodes-base/node-param-type-options-password-missing
+				typeOptions: { password: false },
 				default: '',
 				required: true,
 				displayOptions: {
@@ -105,6 +107,8 @@ export class KavenegarSMS implements INodeType {
 				displayName: 'Token 2',
 				name: 'token2',
 				type: 'string',
+				// eslint-disable-next-line n8n-nodes-base/node-param-type-options-password-missing
+				typeOptions: { password: false },
 				default: '',
 				displayOptions: {
 					show: {
@@ -117,6 +121,8 @@ export class KavenegarSMS implements INodeType {
 				displayName: 'Token 3',
 				name: 'token3',
 				type: 'string',
+				// eslint-disable-next-line n8n-nodes-base/node-param-type-options-password-missing
+				typeOptions: { password: false },
 				default: '',
 				displayOptions: {
 					show: {

@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rezamh/n8n-nodes-kavenegar.git"
+    "url": "git+https://github.com/rezamh/n8n-nodes-kavenegar.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -33,12 +33,11 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/KavenegarApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/KavenegarSMS/KavenegarSms.node.js",
+      "dist/nodes/KavenegarTrigger/KavenegarTrigger.node.js"
     ]
   },
   "devDependencies": {
